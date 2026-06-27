@@ -30,19 +30,19 @@ This repository is actively being developed to cover the following topics:
 - [x] Deprecated Methods Analysis
 
 ### 2. Intermediate Concepts
-- [ ] Thread Joining
-- [ ] The `volatile` Keyword
-- [ ] Thread Priority and Daemon Threads
+- [x] Thread Joining
+- [x] The `volatile` Keyword
+- [x] Thread Priority and Daemon Threads
 
 ### 3. Advanced Multithreading
-- [ ] **Thread Pools:** Executor Framework, `ThreadPoolExecutor`
-- [ ] **Callable and Future:** Returning results from threads
+- [x] **Thread Pools:** Executor Framework, `ThreadPoolExecutor`
+- [x] **Callable and Future:** Returning results from threads
 - [ ] **Fork/Join Framework:** Parallel task execution
 - [ ] **ThreadLocal:** Thread-confined variables
 
 ### 4. Concurrency Utilities (`java.util.concurrent`)
-- [ ] `ExecutorService` and `ScheduledExecutorService`
-- [ ] `CompletableFuture` (Asynchronous programming)
+- [x] `ExecutorService` and `ScheduledExecutorService`
+- [x] `CompletableFuture` (Asynchronous programming)
 - [ ] Synchronization Aids: `CountDownLatch`, `CyclicBarrier`, `Phaser`, `Exchanger`
 
 ### 5. Concurrent Collections & Atomic Variables
