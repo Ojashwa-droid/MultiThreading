@@ -37,8 +37,8 @@ This repository is actively being developed to cover the following topics:
 ### 3. Advanced Multithreading
 - [x] **Thread Pools:** Executor Framework, `ThreadPoolExecutor`
 - [x] **Callable and Future:** Returning results from threads
-- [ ] **Fork/Join Framework:** Parallel task execution
-- [ ] **ThreadLocal:** Thread-confined variables
+- [x] **Fork/Join Framework:** Parallel task execution
+- [x] **ThreadLocal:** Thread-confined variables
 
 ### 4. Concurrency Utilities (`java.util.concurrent`)
 - [x] `ExecutorService` and `ScheduledExecutorService`
@@ -48,7 +48,7 @@ This repository is actively being developed to cover the following topics:
 ### 5. Concurrent Collections & Atomic Variables
 - [ ] `ConcurrentHashMap`, `CopyOnWriteArrayList`
 - [ ] `BlockingQueue` (Array, Linked, Priority)
-- [ ] Atomic Variables: `AtomicInteger`, `AtomicReference`, Compare-and-Swap (CAS)
+- [x] Atomic Variables: `AtomicInteger`, `AtomicReference`, Compare-and-Swap (CAS)
 
 ### 6. Architecture & Best Practices
 - [ ] Concurrency Design Patterns
