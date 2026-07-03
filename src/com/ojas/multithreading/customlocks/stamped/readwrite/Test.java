@@ -1,4 +1,4 @@
-package com.ojas.multithreading.custom.locks.stamped.readwrite;
+package com.ojas.multithreading.customlocks.stamped.readwrite;
 
 public class Test {
     public static void main(String[] args) {

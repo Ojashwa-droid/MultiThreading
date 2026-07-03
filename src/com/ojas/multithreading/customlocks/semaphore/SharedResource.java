@@ -1,4 +1,4 @@
-package com.ojas.multithreading.custom.locks.semaphore;
+package com.ojas.multithreading.customlocks.semaphore;
 
 import java.util.concurrent.Semaphore;
 

@@ -1,4 +1,4 @@
-package com.ojas.multithreading.custom.locks.reentrant;
+package com.ojas.multithreading.customlocks.reentrant;
 
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -14,6 +14,7 @@ public class SharedResource {
         } catch (InterruptedException e) {
             // ... handling some exceptions
             e.printStackTrace();
+            Thread.currentThread().interrupt();
         } finally {
             System.out.println("Lock released by " + Thread.currentThread().getName());
             lock.unlock();

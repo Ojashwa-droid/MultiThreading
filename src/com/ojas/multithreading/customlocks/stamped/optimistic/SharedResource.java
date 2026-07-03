@@ -1,4 +1,4 @@
-package com.ojas.multithreading.custom.locks.stamped.optimistic;
+package com.ojas.multithreading.customlocks.stamped.optimistic;
 
 import java.util.concurrent.locks.StampedLock;
 

@@ -1,4 +1,4 @@
-package com.ojas.multithreading.custom.locks.reentrant;
+package com.ojas.multithreading.customlocks.reentrant;
 
 import java.util.concurrent.locks.ReentrantLock;
 

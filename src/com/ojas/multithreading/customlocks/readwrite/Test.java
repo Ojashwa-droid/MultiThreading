@@ -1,4 +1,4 @@
-package com.ojas.multithreading.custom.locks.readwrite;
+package com.ojas.multithreading.customlocks.readwrite;
 
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
