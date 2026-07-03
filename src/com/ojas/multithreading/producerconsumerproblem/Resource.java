@@ -5,8 +5,8 @@ import java.util.Queue;
 
 public class Resource {
 
-    private Queue<Item> sharedBuffer;
-    private int bufferSize;
+    private final Queue<Item> sharedBuffer;
+    private final int bufferSize;
 
     public Resource(int bufferSize) {
         this.sharedBuffer = new LinkedList<>();
@@ -29,7 +29,7 @@ public class Resource {
         System.out.println("Produced item: " + item.toString() + " and added it to the buffer.");
     }
 
-    public synchronized Item consumeItem() {
+    public synchronized void consumeItem() {
         while (sharedBuffer.isEmpty()) {
             try {
                 System.out.println("Queue is empty. Consumer is waiting...");
@@ -42,12 +42,11 @@ public class Resource {
         System.out.println("Consumed item: " + item.toString());
 
         notify();
-        return item;
     }
 
     public static class Item {
-        private int value;
-        private long timestamp;
+        private final int value;
+        private final long timestamp;
 
         public Item(int value, long timestamp) {
             this.value = value;

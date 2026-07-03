@@ -2,7 +2,7 @@ package com.ojas.multithreading.moniter;
 
 public class Test {
     public static void main(String[] args) {
-        MoniterLockExample example = new MoniterLockExample();
+        MoniterLock example = new MoniterLock();
 
         MonitorThread1 moniterThread1 = new MonitorThread1(example);
 

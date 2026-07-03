@@ -1,6 +1,6 @@
 package com.ojas.multithreading.moniter;
 
-public class MoniterLockExample {
+public class MoniterLock {
     public synchronized void task1() {
         // do something
         try {

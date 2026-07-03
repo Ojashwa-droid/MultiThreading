@@ -1,9 +1,9 @@
 package com.ojas.multithreading.moniter;
 
 public class MonitorThread1 implements Runnable{
-    MoniterLockExample obj;
+    MoniterLock obj;
 
-    public MonitorThread1(MoniterLockExample obj) {
+    public MonitorThread1(MoniterLock obj) {
         this.obj = obj;
     }
 
