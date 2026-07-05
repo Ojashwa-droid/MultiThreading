@@ -21,13 +21,13 @@ Waiting
 Timed Waiting
 Terminated
 
-Basics of Thread - Part2 : Inter Thread Communication and Synchronization
+Basics of Thread - Part2 : Inter Thread Communication & Synchronization
 Synchronization and Thread Safety
 Synchronized Methods
 Synchronized Blocks
 Inter-Thread Communication
 wait(), notify(), and notifyAll() methods
-Producer-Consumer Problem - Assingment
+Producer-Consumer Problem - Assignment
          
  
 Basics of Threads - Part3 

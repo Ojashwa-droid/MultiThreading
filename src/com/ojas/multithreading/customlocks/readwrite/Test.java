@@ -8,9 +8,15 @@ public class Test {
         SharedResource sharedResource = new SharedResource();
         ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
 
-        Thread thread1 = new Thread(() -> sharedResource.produce(readWriteLock));
-        Thread thread2 = new Thread(() -> sharedResource.produce(readWriteLock));
+        // two read locks in the form of producer threads
+        Thread thread1 = new Thread(() -> {
+            sharedResource.produce(readWriteLock);
+        });
+        Thread thread2 = new Thread(() -> {
+            sharedResource.produce(readWriteLock);
+        });
 
+        // single write lock in the form of consumer thread
         SharedResource sharedResource1 = new SharedResource();
         Thread thread3 = new Thread(() -> sharedResource1.consume(readWriteLock));
 
