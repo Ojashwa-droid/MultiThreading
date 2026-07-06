@@ -1,4 +1,4 @@
-package com.ojas.multithreading.producerconsumerproblem;
+package com.ojas.multithreading.producerconsumerproblem.single;
 
 public class Main {
     public static void main(String[] args) {

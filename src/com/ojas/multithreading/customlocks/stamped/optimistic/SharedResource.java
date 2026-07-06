@@ -1,5 +1,6 @@
 package com.ojas.multithreading.customlocks.stamped.optimistic;
 
+
 import java.util.concurrent.locks.StampedLock;
 
 public class SharedResource {

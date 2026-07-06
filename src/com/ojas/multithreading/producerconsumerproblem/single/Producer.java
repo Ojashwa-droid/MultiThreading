@@ -1,7 +1,7 @@
-package com.ojas.multithreading.producerconsumerproblem;
+package com.ojas.multithreading.producerconsumerproblem.single;
 
 public class Producer implements Runnable {
-    private Resource sharedBuffer;
+    private final Resource sharedBuffer;
 
     public Producer(Resource resource) {
         this.sharedBuffer = resource;

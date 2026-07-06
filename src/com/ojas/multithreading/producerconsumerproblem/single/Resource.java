@@ -1,4 +1,4 @@
-package com.ojas.multithreading.producerconsumerproblem;
+package com.ojas.multithreading.producerconsumerproblem.single;
 
 import java.util.LinkedList;
 import java.util.Queue;
