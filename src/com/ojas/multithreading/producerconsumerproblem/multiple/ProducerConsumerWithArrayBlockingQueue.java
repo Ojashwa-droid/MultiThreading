@@ -7,7 +7,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ProducerConsumerWithArrayBlockingQueue {
-    // A simple record to hold our data (replaces your static class Item)
     record Item(int id, int value) {}
 
     public static void main(String[] args) {
