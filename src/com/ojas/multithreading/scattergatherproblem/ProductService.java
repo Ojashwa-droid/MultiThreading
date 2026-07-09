@@ -17,7 +17,6 @@ public class ProductService {
         executorService.submit(new PriceGatherTaskV1(URL, 2, prices, countDownLatch));
         executorService.submit(new PriceGatherTaskV1(URL, 3, prices, countDownLatch));
         executorService.submit(new PriceGatherTaskV1(URL, 4, prices, countDownLatch));
-        executorService.shutdown();
 
         countDownLatch.await(3, TimeUnit.SECONDS);
 
@@ -34,10 +33,14 @@ public class ProductService {
     // Method 2: Using CompletableFuture
     public Set<Integer> fetchProductPricesV2() throws ExecutionException, InterruptedException, TimeoutException {
         Set<Integer> prices = Collections.synchronizedSet(new HashSet<>());
-        CompletableFuture<Void> task1 = CompletableFuture.runAsync(new PriceGatherTaskV2(URL, 1, prices));
-        CompletableFuture<Void> task2 = CompletableFuture.runAsync(new PriceGatherTaskV2(URL, 2, prices));
-        CompletableFuture<Void> task3 = CompletableFuture.runAsync(new PriceGatherTaskV2(URL, 3, prices));
-        CompletableFuture<Void> task4 = CompletableFuture.runAsync(new PriceGatherTaskV2(URL, 4, prices));
+        CompletableFuture<Void> task1 =
+                CompletableFuture.runAsync(new PriceGatherTaskV2(URL, 1, prices), executorService);
+        CompletableFuture<Void> task2 =
+                CompletableFuture.runAsync(new PriceGatherTaskV2(URL, 2, prices), executorService);
+        CompletableFuture<Void> task3 =
+                CompletableFuture.runAsync(new PriceGatherTaskV2(URL, 3, prices), executorService);
+        CompletableFuture<Void> task4 =
+                CompletableFuture.runAsync(new PriceGatherTaskV2(URL, 4, prices), executorService);
 
         CompletableFuture<Void> completableFuture = CompletableFuture.allOf(task1, task2, task3, task4);
         completableFuture.get(3, TimeUnit.SECONDS);
