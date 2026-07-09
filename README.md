@@ -43,7 +43,7 @@ This repository is actively being developed to cover the following topics:
 ### 4. Concurrency Utilities (`java.util.concurrent`)
 - [x] `ExecutorService` and `ScheduledExecutorService`
 - [x] `CompletableFuture` (Asynchronous programming)
-- [ ] Synchronization Aids: `CountDownLatch`, `CyclicBarrier`, `Phaser`, `Exchanger`
+- [x] Synchronization Aids: `CountDownLatch`, `CyclicBarrier`, `Phaser`, `Exchanger`
 
 ### 5. Concurrent Collections & Atomic Variables
 - [ ] `ConcurrentHashMap`, `CopyOnWriteArrayList`
