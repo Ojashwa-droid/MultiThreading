@@ -39,10 +39,8 @@ public class ThreadLocalExample {
         for (int i = 0; i < 15; i++) {
             executorService.submit(() -> {
                 System.out.println(threadLocal.get());
+                threadLocal.remove();
             });
         }
-
-
-
     }
 }
